@@ -12,7 +12,7 @@ app.get('/',(req,res)=>{
     console.log('im at home')
     res.sendFile(path.join(__dirname,'../public/index.html'))
 })
-
+//adding a comment thats it
 
 app.get('/previousMatches',(req,res)=>{
     res.sendFile(path.join(__dirname,'../public/previousMatches.html'))  
@@ -32,6 +32,10 @@ app.get('/score',(req,res)=>{
     console.log('im in score')
     idm = req.query.id
     res.sendFile(path.join(__dirname,'../public/scorecard.html'))
+})
+
+app.get('/something',(req,res)=>{
+    console.log("something");
 })
 
 let pid = 0
