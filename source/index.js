@@ -38,6 +38,8 @@ app.get('/something',(req,res)=>{
     console.log("something");
 })
 
+console.log("nattu nattu from RRR");
+
 let pid = 0
 app.get('/player',(req,res)=>{
     console.log('im in player')
